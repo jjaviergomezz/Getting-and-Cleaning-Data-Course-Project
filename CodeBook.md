@@ -3,7 +3,7 @@
 ### **Tidy Data Set of Averaged Statistics (Means and Standard Deviations) over Measures from *Human Activity Recognition Using Smartphones Dataset* Arranged by Subject and Activity**  
   
     
-> The tidy data set given in **`tidydataset.txt`** was obtained with the **`run_analysis.R`** code archive, that works over Human Activity Recognition Using Smartphones Dataset [**(zip file)**](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) from this web site:  [**link**](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
+The tidy data set given in **`tidydataset.txt`** was obtained with the **`run_analysis.R`** code archive, that works over Human Activity Recognition Using Smartphones Dataset [**(zip file)**](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) from this web site:  [**link**](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
 
 The experiments were carried out with a group of **30 volunteers** within an age bracket of 19-48 years. Each person performed **six activities**:  
   
@@ -16,7 +16,7 @@ The experiments were carried out with a group of **30 volunteers** within an age
   
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the researchers (see License paragraph) captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments were  video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-> **NOTE 1:** The sensor signals are not considered in the modified data set.   
+**NOTE 1:** The sensor signals are not considered in the modified data set.   
 Let's therefore pre-select:   
 - A 561-feature vector with time and frequency domain variables. (`X_train` and `X_test`, bold in next paragraph)  
 - Its activity label. (The same with `y_`.)  
@@ -109,17 +109,15 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 The complete list of variables of each feature vector is available in `'features.txt'`  
 
-> **NOTE 2:** After inspecting the series of names of the measured and calculated variables we only use feature variables with **"mean()"** and **"std()"** into their names to build the final tidy dataset.  
+**NOTE 2:** After inspecting the series of names of the measured and calculated variables we only use feature variables with **"mean()"** and **"std()"** into their names to build the final tidy dataset.  
 
-> **NOTE 3:** Features are normalized and bounded within [-1,1].
+**NOTE 3:** Features are normalized and bounded within [-1,1].
 
 #### **Reshaping the data set:**
 
-> We create an independent tidy data set with the average of each selected measure (means and standard deviations from the measures obtained in the experiment) for each activity and each subject.  
+We create an independent tidy data set with the average of each selected measure (means and standard deviations from the measures obtained in the experiment) for each activity and each subject. Then, we arrange the dataframe by Subject and by Activity afterwards.
 
-> We arrange the dataframe by Subject and by Activity afterwards.
-
-> For more details, read `README.md`, where the steps of the entire analysis are explained.  
+For more details, read `README.md`, where the steps of the entire analysis are explained.  
 
 #### **License of the original dataset:**
 
