@@ -93,8 +93,7 @@ features <- read.table("UCI HAR Dataset/features.txt")
 names(XTrain) <- features$V2
 names(XTest)  <- features$V2
 ```
-#### **4. Extracting the measurements on the mean and standard deviation
-#### for each measurement**
+#### **4. Extracting the measurements on the mean and standard deviation for each measurement**
 ```{r}
 select <- grep("mean\\()|std\\()", features$V2)
 
@@ -105,17 +104,16 @@ SelectXTest  <- XTest[, select]
 #### **5. Merging the training and test sets to create one data set**
 
   Now we can merge all this data, by columns (variables) first, and then
-by rows (training and test data).
-
-##### By columns for training data:
+by rows (training and test data).  
+By columns for training data:
 ```{r}
 SelectTrain <- cbind(STrain, YTrain, SelectXTrain)
 ```
-##### The same for test data:
+The same for test data:
 ```{r}
 SelectTest <- cbind(STest, YTest, SelectXTest)
 ```
-##### And finally we join both datasets by rows:
+And finally we join both datasets by rows:
 ```{r}
 SelectDataSet <- rbind(SelectTrain, SelectTest)
 ```
