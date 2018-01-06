@@ -16,8 +16,7 @@ The experiments were carried out with a group of **30 volunteers** within an age
   
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the researchers (see License paragraph) captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments were  video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
-**NOTE 1:** The sensor signals are not considered in the modified data set.   
-Let's therefore pre-select:   
+**NOTE 1:** The sensor signals are not considered in the modified data set. Let's therefore pre-select:   
 - A 561-feature vector with time and frequency domain variables. (`X_train` and `X_test`, bold in next paragraph)  
 - Its activity label. (The same with `y_`.)  
 - An identifier of the subject who carried out the experiment. (The same with `subject_`.)  
