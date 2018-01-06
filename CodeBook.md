@@ -32,13 +32,13 @@ Let's therefore pre-select:
 
 - `'activity_labels.txt'`: Links the class labels with their activity name.
 
-- **`'train/X_train.txt'`: **Training set.  
+- **`'train/X_train.txt'`:** Training set.  
 
-- **`'train/y_train.txt'`: **Training labels.
+- **`'train/y_train.txt'`:** Training labels.
 
-- **`'test/X_test.txt'`: **Test set.
+- **`'test/X_test.txt'`:** Test set.
 
-- **`'test/y_test.txt'`: **Test labels.
+- **`'test/y_test.txt'`:** Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
@@ -109,9 +109,9 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 
 The complete list of variables of each feature vector is available in `'features.txt'`  
 
-> **NOTE 2: ** After inspecting the series of names of the measured and calculated variables we only use feature variables with **"mean()"** and **"std()"** into their names to build the final tidy dataset.  
+> **NOTE 2:** After inspecting the series of names of the measured and calculated variables we only use feature variables with **"mean()"** and **"std()"** into their names to build the final tidy dataset.  
 
-> **NOTE 3: ** Features are normalized and bounded within [-1,1].
+> **NOTE 3:** Features are normalized and bounded within [-1,1].
 
 #### **Reshaping the data set: **
 
