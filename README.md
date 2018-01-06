@@ -3,7 +3,7 @@
 
 #### **1. Downloading and unzipping the file** 
 
-  First of all, we download and unzip the zip file:
+  First of all, we download and unzip the zip file (**only if it is not already done**):
 
 ```{r}
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
