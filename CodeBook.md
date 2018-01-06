@@ -22,7 +22,7 @@ Let's therefore pre-select:
 - Its activity label. (The same with `y_`.)  
 - An identifier of the subject who carried out the experiment. (The same with `subject_`.)  
 
-#### **The dataset includes the following files: **
+#### **The dataset includes the following files:**
 
 - `'README.txt'`
 
@@ -113,7 +113,7 @@ The complete list of variables of each feature vector is available in `'features
 
 > **NOTE 3:** Features are normalized and bounded within [-1,1].
 
-#### **Reshaping the data set: **
+#### **Reshaping the data set:**
 
 > We create an independent tidy data set with the average of each selected measure (means and standard deviations from the measures obtained in the experiment) for each activity and each subject.  
 
@@ -121,7 +121,7 @@ The complete list of variables of each feature vector is available in `'features
 
 > For more details, read `README.md`, where the steps of the entire analysis are explained.  
 
-#### **License of the original dataset: **
+#### **License of the original dataset:**
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living. Vitoria-Gasteiz, Spain. Dec 2012
 
