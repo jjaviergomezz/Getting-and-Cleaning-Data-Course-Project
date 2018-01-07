@@ -111,16 +111,15 @@ library(reshape2)
 
 l <- length(names(SelectDataSet))
 MeasureVars <- names(SelectDataSet)[3:l]
-MeltedData <- melt(SelectDataSet,id=c("Subject", "Activity"), measure.vars=MeasureVars)
+MeltedData <- melt(SelectDataSet,id=c("Activity", "Subject"), measure.vars=MeasureVars)
 
-CastedData <- dcast(MeltedData, Subject + Activity ~ variable, mean)
+CastedData <- dcast(MeltedData, Activity + Subject ~ variable, mean)
 
-FinalData <- melt(CastedData, id=c("Subject", "Activity"), measure.vars=MeasureVars) 
+FinalData <- melt(CastedData, id=c("Activity", "Subject"), measure.vars=MeasureVars) 
 
 library(dplyr)
 
-FinalData <- arrange(FinalData, Subject, Activity)
-
+FinalData <- arrange(FinalData, as.character(Activity), Subject)
 
 write.table(FinalData, "finaldataset.txt", row.names = FALSE)
 

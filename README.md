@@ -135,25 +135,31 @@ library(reshape2)
 l <- length(names(SelectDataSet))
 MeasureVars <- names(SelectDataSet)[3:l]
 MeltedData <- melt(SelectDataSet,
-        id=c("Subject", "Activity"),measure.vars=MeasureVars)
+        id=c("Activity", "Subject"),measure.vars=MeasureVars)
 
-CastedData <- dcast(MeltedData, Subject + Activity ~ variable, mean)
+CastedData <- dcast(MeltedData, Activity + Subject ~ variable, mean)
 
 FinalData <- melt(CastedData,
-        id=c("Subject", "Activity"), measure.vars=MeasureVars)
+        id=c("Activity", "Subject"), measure.vars=MeasureVars)
 ```
   Finally, with the `dplyr` package, we arrange the dataframe based on 
-Subject value first, and Activity value afterwards.
+Activity value first, and Subject value afterwards.
 ```{r}
 library(dplyr)
-FinalData <- arrange(FinalData, Subject, Activity)
+FinalData <- arrange(FinalData, Activity, Subject)
+```
+  Finally, with the `dplyr` package, we arrange the dataframe based on 
+Activity value first, and Subject value afterwards.
+```{r}
+library(dplyr)
+FinalData <- arrange(FinalData, as.character(Activity), Subject)
 ```
 
 #### **8. Sending the final tidy data set**
 
   For send the final data set, we use the next sentence:
 ```{r}  
-write.table(FinalData, "dataset.txt", row.names = FALSE)
+write.table(FinalData, "finaldataset.txt", row.names = FALSE)
 ```
 
 

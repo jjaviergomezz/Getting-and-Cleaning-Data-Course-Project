@@ -114,7 +114,7 @@ The complete list of variables of each feature vector is available in `'features
 
 #### **Reshaping the data set:**
 
-We create an independent tidy data set with the average of each selected measure (means and standard deviations from the measures obtained in the experiment) for each activity and each subject. Then, we arrange the dataframe by Subject and by Activity afterwards.
+We create an independent tidy data set with the average of each selected measure (means and standard deviations from the measures obtained in the experiment) for each activity and each subject. Then, we arrange the dataframe by Activity and by Subject afterwards.
 
 For more details, read `README.md`, where the steps of the entire analysis are explained.  
 
