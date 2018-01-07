@@ -1,6 +1,6 @@
   
 ## **Code Book**
-### **Tidy Data Set of Averaged Statistics (Means and Standard Deviations) over Measures from *Human Activity Recognition Using Smartphones Dataset* Arranged by Subject and Activity**  
+### **Tidy Data Set of Averaged Statistics (Means and Standard Deviations) over Measures from *Human Activity Recognition Using Smartphones Dataset* Arranged by Activity and Subject**  
   
     
 The tidy data set given in **`tidydataset.txt`** was obtained with the **`run_analysis.R`** code archive, that works over Human Activity Recognition Using Smartphones Dataset [**(zip file)**](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) from this web site:  [**link**](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
