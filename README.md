@@ -142,12 +142,7 @@ CastedData <- dcast(MeltedData, Activity + Subject ~ variable, mean)
 FinalData <- melt(CastedData,
         id=c("Activity", "Subject"), measure.vars=MeasureVars)
 ```
-  Finally, with the `dplyr` package, we arrange the dataframe based on 
-Activity value first, and Subject value afterwards.
-```{r}
-library(dplyr)
-FinalData <- arrange(FinalData, Activity, Subject)
-```
+
   Finally, with the `dplyr` package, we arrange the dataframe based on 
 Activity value first, and Subject value afterwards.
 ```{r}
